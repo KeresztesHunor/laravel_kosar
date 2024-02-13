@@ -19,6 +19,7 @@ class ProductFactory extends Factory
     {
         return [
             'type_id' => ProductType::all()->random()->type_id,
+            'quantity' => 0,
             'date' => fake()->date(),
         ];
     }
